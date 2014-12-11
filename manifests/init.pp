@@ -121,7 +121,7 @@ class katello (
     Class[ 'certs' ] ->
     class { 'certs::gutterball': } ->
     class { 'gutterball':
-      keystore_password_file => $certs::gutterball::password_file,
+      keystore_password => $certs::gutterball::gutterball_keystore_password,
     }
   }
 
